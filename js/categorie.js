@@ -34,7 +34,7 @@ export default {
             const classdecategorie = "categorieProjet";
             const numUE = [1, 2, 3, 4, 5, 6, 7,8];
             const nomUE = ["Aide à la décision", "Daily Info", "Portfolio", "Tourisme App", "Kamouflage Web", "Douzie Clicker", "keb'app","Labyrinthe"];
-            const licon = [ "fa-brands fa-java","fa-brands fa-android" ,"fa-brands fa-js", "fa-brands fa-vuejs","fa-brands fa-html5", "fa-brands fa-php","fa-brands fa-symfony","fa-brands fa-python"];
+            const licon = [ "./img/projet/projet.png","fa-brands fa-android" ,"fa-brands fa-js", "fa-brands fa-vuejs","fa-brands fa-html5", "fa-brands fa-php","fa-brands fa-symfony","fa-brands fa-python"];
             const title ="./ projet";
             return { classdezone,classdecategorie,title,numUE, nomUE, licon, conte };
         }
@@ -51,14 +51,22 @@ export default {
     },
     template: /*html*/ `
     <div class="main">
-    <div :class="classdecategorie">
-        <h2>{{ title }}<span id="underscore" class="blink">_</span></h2>
-        <button v-for="ue in numUE" :key="ue" @click="setSelectedUE(ue)" class="nobutton" :class="{ active: selected === ue }">
-            <i :class="licon[ue-1]"></i> {{type}} {{ ue }} - {{ nomUE[ue-1] }}
-            <!-- <img v-if="props.cont === 2" src="./img/projet.png"/> -->
-        </button>
+        <div :class="classdecategorie">
+            <h2>{{ title }}<span id="underscore" class="blink">_</span></h2>
+            <button v-for="ue in numUE" :key="ue" @click="setSelectedUE(ue)" class="nobutton" :class="{ active: selected === ue }">
+                <!-- Si c'est un projet-->
+                <div v-if="cont === 2">
+                    <img :src="licon[ue-1]"/>
+                    <nav>{{ nomUE[ue-1] }}</nav>
+                </div>
+
+                <!-- Si c'est un langage ou une UE-->
+                <div v-if="cont === 3 || cont === 1">
+                <i :class="licon[ue-1]"></i> {{type}} {{ ue }} - {{ nomUE[ue-1] }}
+                <div>
+            </button>
+        </div>
     </div>
-</div>
 <div :class="classdezone">
     <Zone :cont="conte" :selected="selected"/>
 <div>
