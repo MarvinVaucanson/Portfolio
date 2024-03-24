@@ -34,7 +34,7 @@ export default {
             const classdecategorie = "categorieProjet";
             const numUE = [1, 2, 3, 4, 5, 6, 7,8];
             const nomUE = ["Aide à la décision", "Daily Info", "Portfolio", "Tourisme App", "Kamouflage Web", "Douzie Clicker", "keb'app","Labyrinthe"];
-            const licon = [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "fa-brands fa-vuejs","fa-brands fa-html5", "fa-brands fa-php","fa-brands fa-symfony","fa-brands fa-python"];
+            const licon = [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"];
             const title ="./ projet";
             return { classdezone,classdecategorie,title,numUE, nomUE, licon, conte };
         }

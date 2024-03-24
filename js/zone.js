@@ -50,9 +50,10 @@ export default {
             2: {
                 type: "",
                 path: "/langages",
-                numUE: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-                nomUE: ["Python", "C", "Java", "AndroidStudio_Kotlin", "JS", "VueJS", "HTML_CSS", "PHP", "Symfony", "SQL", "PowerBI", "MongoDB", "Docker", "GIT"],
-                licon: ["fa-brands fa-python", "fa-solid fa-microchip", "fa-brands fa-java","fa-brands fa-android" ,"fa-brands fa-js", "fa-brands fa-vuejs","fa-brands fa-html5", "fa-brands fa-php","fa-brands fa-symfony","fa-solid fa-database","fa-brands fa-microsoft","fa-brands fa-envira","fa-brands fa-docker","fa-brands fa-gitlab"],
+                numUE : [1, 2, 3, 4, 5, 6, 7,8],
+                nomUE : ["Aide à la décision", "Daily Info", "Portfolio", "Tourisme App", "Kamouflage Web", "Douzie Clicker", "keb'app","Labyrinthe"],
+                licon : ["graphe","daily","portfolio","tourisme","kamouflagek","","kebab","labyrinthe"], 
+                // licon : [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"],
                 texte: [
                     `Python est un langage de programmation polyvalent, reconnu pour sa simplicité syntaxique et sa lisibilité. Il est largement utilisé dans le développement web, le machine learning, l'automatisation de tâches et bien plus encore.`,
                     `Le langage C est un pilier de la programmation informatique, réputé pour son efficacité et sa proximité avec le matériel. Il est souvent utilisé dans le développement de systèmes d'exploitation, de logiciels embarqués et d'applications nécessitant des performances optimales.`,
@@ -62,14 +63,8 @@ export default {
                     `Vue.js est un framework JavaScript progressif et accessible, utilisé pour construire des interfaces utilisateur interactives et dynamiques. Il offre une architecture flexible et des performances optimales, ce qui en fait un choix populaire pour le développement d'applications web modernes.`,                  
                     `HTML et CSS sont les langages de base du développement web. HTML est utilisé pour structurer le contenu des pages web, tandis que CSS est utilisé pour styliser et mettre en forme ces contenus, créant ainsi des expériences visuelles attrayantes et cohérentes.`,                    
                     `PHP est un langage de script côté serveur largement utilisé pour le développement web. Il est principalement utilisé pour générer des contenus dynamiques, traiter les formulaires, interagir avec les bases de données et bien plus encore.`,                    
-                    `Symfony est un framework PHP robuste et modulaire, utilisé pour accélérer le processus de développement d'applications web complexes. Il offre une architecture flexible, des composants réutilisables et une communauté active, ce qui en fait un choix populaire parmi les développeurs PHP.`,                 
-                    `SQL(Structured Query Language) est un langage de programmation utilisé pour communiquer avec les bases de données relationnelles. Il permet de manipuler et de gérer les données stockées dans une base de données, en effectuant des opérations telles que la création, la modification et la récupération de données.`,                    
-                    `Power BI est une plateforme d'analyse de données de Microsoft qui permet aux utilisateurs de visualiser et partager des insights à partir de données. Il offre des outils de création de rapports, de visualisation et de tableau de bord pour aider les entreprises à prendre des décisions informées.`,                
-                    `MongoDB est une base de données NoSQL flexible et évolutive, utilisée pour stocker des données semi-structurées et non structurées. Elle offre une scalabilité horizontale, une haute disponibilité et une flexibilité de schéma, ce qui en fait un choix populaire pour les applications web modernes.`,                    
-                    `Docker est une plateforme de virtualisation légère qui permet aux développeurs de créer, de déployer et d'exécuter des applications dans des conteneurs logiciels. Il offre une gestion efficace des environnements de développement et de production, ainsi qu'une portabilité des applications entre différents systèmes.`,             
-                    `Git est un système de contrôle de version distribué largement utilisé pour le suivi des modifications apportées au code source lors du développement logiciel. Il permet aux équipes de collaborer efficacement, de gérer les branches de code et de suivre l'historique des modifications.`,
                 ],
-                cheminImages: "img/langages/"
+                cheminImages: "./img/projet/"
             },
         };
 
@@ -78,11 +73,16 @@ export default {
     computed: {
         selectedImagePath() {
             return `${this.cheminImages}${this.nomUE[this.selected]}.png`;
+        },
+        selectedImagePath2() {
+            return `${this.cheminImages}${this.licon[this.selected]}.png`;
         }
     },
 
     template: /*html*/ `
-    <img :src="selectedImagePath" width="100%" class="photoronde"/>
+    <img v-if="cont === 0||cont === 1" :src="selectedImagePath" width="100%" class="photoronde"/>
+    <img v-if="cont === 2" :src="selectedImagePath2" width="100%" class="photoronde"/>
+
     <div class="titre">// {{ type }} {{ numUE[selected] }} - {{ nomUE[selected] }}</div>
     <div class="zone-content">
         <p>{{ texte[selected] }}</p>
