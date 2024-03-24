@@ -9,7 +9,7 @@ body {
 
 body{
     background-image: url(img/P1080973.jpg);
-    background-size: cover;
+    background-size: 100%;
     /* background-color: #88ce25; */
     font-family:JetBrain;
     margin: 0%;

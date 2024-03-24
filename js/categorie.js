@@ -34,7 +34,7 @@ export default {
             const classdecategorie = "categorieProjet";
             const numUE = [1, 2, 3, 4, 5, 6, 7,8];
             const nomUE = ["Aide à la décision", "Daily Info", "Portfolio", "Tourisme App", "Kamouflage Web", "Douzie Clicker", "keb'app","Labyrinthe"];
-            const licon = [ "./img/projet/projet.png","fa-brands fa-android" ,"fa-brands fa-js", "fa-brands fa-vuejs","fa-brands fa-html5", "fa-brands fa-php","fa-brands fa-symfony","fa-brands fa-python"];
+            const licon = [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "fa-brands fa-vuejs","fa-brands fa-html5", "fa-brands fa-php","fa-brands fa-symfony","fa-brands fa-python"];
             const title ="./ projet";
             return { classdezone,classdecategorie,title,numUE, nomUE, licon, conte };
         }
@@ -61,8 +61,8 @@ export default {
                 </div>
 
                 <!-- Si c'est un langage ou une UE-->
-                <div v-if="cont === 3 || cont === 1">
-                <i :class="licon[ue-1]"></i> {{type}} {{ ue }} - {{ nomUE[ue-1] }}
+                <div v-if="cont === 0 || cont === 1">
+                    <i :class="licon[ue-1]"></i> {{type}} {{ ue }} - {{ nomUE[ue-1] }}
                 <div>
             </button>
         </div>
