@@ -1,0 +1,2 @@
+Il me faut donc un patern vue.js pour le menu des catégories et un autre pour le contenue meme de la rubrique
+de préférence pour la partie UE il faut une seule zone te texte et elle change en fonction de ce dont ce qi est cliqué *$

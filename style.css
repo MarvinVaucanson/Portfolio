@@ -1,0 +1,414 @@
+@font-face {
+    font-family: JetBrain; 
+    src: url('JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: MaPolice, sans-serif; /* Utilisez la police importée */
+}
+
+body{
+    background-image: url(img/P1080973.jpg);
+    background-size: cover;
+    /* background-color: #88ce25; */
+    font-family:JetBrain;
+    margin: 0%;
+}
+
+#parabody2{
+    background-image: url(img/Competence.png);
+}
+
+#parabody3{
+    background-image: url(img/projet.png);
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    margin : 4%;
+    margin-top : 0%;
+    margin-bottom: 0%;
+}
+
+.main h2{
+    margin-top: 0%;
+}
+
+#menu{
+    display: flex;
+}
+
+#menu a{
+    font-size: 22px;
+    color: rgb(53, 53, 53);
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    position:sticky;
+    top:0px;
+}
+
+#menu li {
+    width: 100%;
+}
+
+#menu li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px; /* Vous pouvez ajuster la marge intérieure selon vos besoins */
+    background-color: #ffffff; /* Ajoutez n'importe quelle couleur de fond que vous préférez */
+    color: #333; /* Couleur du texte */
+}
+
+#menu li a:hover {
+    background-color: #ccc; /* Couleur de fond au survol */
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+#info{
+    margin-left: 2%;
+}
+
+#greybar {
+    width : 90%;
+    height: 0px;
+    background-color: grey;
+}
+
+.zone{
+    background-color: #33441b;
+    margin: 0%;
+    color: white;
+    font-size: large;
+    padding-bottom: 1%;
+}
+.zone-content{
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top:2%;
+}
+.zone p{
+    text-align:justify;
+}
+
+.zone a{
+    color:white;
+    text-decoration: unset;
+}
+
+.zone a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.photoronde{
+    border-radius: 50%;
+    width: 7%;
+    margin-left: 8%;
+    margin-top: -3%;
+}
+
+.categorie{
+    padding-bottom: 4%;
+    padding-top:2%;
+    padding-left:2%;
+}
+
+.categorieCase{
+    padding-bottom: 4%;
+    padding-top:2%;
+    padding-left:2%;
+}
+
+.categorieProjet{
+    padding-bottom: 4%;
+    padding-top:2%;
+    padding-left:2%;
+}
+
+.titre{
+    margin-left: 16%;
+    margin-top: -3%;
+}
+
+.stitre{
+    margin-left: 11.5%;
+}
+
+.zone2{
+    background-color: #8c52ff;
+    margin: 0%;
+    color: white;
+    font-size: large;
+    padding-bottom: 1%;
+}
+.zone2-content{
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top:2%;
+}
+.zone2 p{
+    text-align:justify;
+}
+
+.zone2 a{
+    color:white;
+    text-decoration: unset;
+}
+
+.zone2 a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+/* 3 */
+
+.zone3{
+    background-color: #3f403e;
+    margin: 0%;
+    color: white;
+    font-size: large;
+    padding-bottom: 1%;
+}
+.zone3-content{
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top:2%;
+}
+.zone3 p{
+    text-align:justify;
+}
+
+.zone3 a{
+    color:white;
+    text-decoration: unset;
+}
+
+.zone3 a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.nobutton {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-family:JetBrain;
+    font-weight: bold;
+}
+
+.nobutton i {
+    margin-right: 0.5em;
+}
+
+/*first categorie*/
+.categorie h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subcategories {
+    display: flex;
+    flex-direction: column;
+}
+
+.subcategory {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subcategory:hover {
+    background-color: #33441b;
+    color: #fff;
+}
+
+/* categorie */
+.categorie {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categorie h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.categorie .nobutton {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    flex: 0 0 calc(50% - 10px); /* Deux colonnes avec un espace de 10px entre les boutons */
+    margin-right: 10px; /* Espacement entre les boutons */
+}
+
+.categorie .nobutton:last-child {
+    margin-right: 0; /* Supprimer l'espacement à droite pour le dernier bouton */
+}
+
+.categorie .nobutton i {
+    margin-right: 10px;
+}
+
+.categorie .nobutton.active {
+    background-color: #8c52ff;
+    color: #fff;
+}
+
+.categorie .nobutton:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.categorie .nobutton.active:hover {
+    background-color: #6b3cca;
+}
+
+/* CategorieCase */
+.categorieCase {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categorieCase .nobutton:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.categorieCase h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.categorieCase .nobutton {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    flex: 0 0 calc(50% - 10px); /* Deux colonnes avec un espace de 10px entre les boutons */
+    margin-right: 10px; /* Espacement entre les boutons */
+}
+
+.categorieCase .nobutton:last-child {
+    margin-right: 0; /* Supprimer l'espacement à droite pour le dernier bouton */
+}
+
+.categorieCase .nobutton i {
+    margin-right: 10px;
+}
+
+.categorieCase .nobutton.active {
+    background-color: #3f403e;
+    color: #fff;
+}
+
+.categorieCase .nobutton.active:hover {
+    background-color: #282927;
+}
+
+@import './css/categorieProjet.css';
+/* categorieProjet */
+.categorieProjet {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categorieProjet .nobutton:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.categorieProjet h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.categorieProjet .nobutton {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    flex: 0 0 calc(50% - 10px); /* Deux colonnes avec un espace de 10px entre les boutons */
+    margin-right: 10px; /* Espacement entre les boutons */
+}
+
+.categorieProjet .nobutton:last-child {
+    margin-right: 0; /* Supprimer l'espacement à droite pour le dernier bouton */
+}
+
+.categorieProjet .nobutton i {
+    margin-right: 10px;
+}
+
+.categorieProjet .nobutton.active {
+    background-color: #086181;
+    color: #fff;
+}
+
+.categorieProjet .nobutton.active:hover {
+    background-color: #086181;
+}
+
+/* 4 */
+
+.zone4{
+    background-color: #086181;
+    margin: 0%;
+    color: white;
+    font-size: large;
+    padding-bottom: 1%;
+}
+.zone4-content{
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top:2%;
+}
+.zone4 p{
+    text-align:justify;
+}
+
+.zone4 a{
+    color:white;
+    text-decoration: unset;
+}
+
+.zone4 a:hover{
+    color:white;
+    text-decoration: underline;
+}
