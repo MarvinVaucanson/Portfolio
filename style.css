@@ -15,6 +15,10 @@ body{
     margin: 0%;
 }
 
+#name{
+    margin-top: 0;
+}
+
 #parabody2{
     background-image: url(img/Competence.png);
 }
@@ -48,6 +52,9 @@ body{
     padding: 0;
     position:sticky;
     top:0px;
+    margin: 4%;
+    margin-top: 3%;
+    margin-bottom: 0;
 }
 
 #menu li {
@@ -57,13 +64,13 @@ body{
 #menu li a {
     display: block;
     text-decoration: none;
-    padding: 10px; /* Vous pouvez ajuster la marge intérieure selon vos besoins */
-    background-color: #ffffff; /* Ajoutez n'importe quelle couleur de fond que vous préférez */
-    color: #333; /* Couleur du texte */
+    padding: 10px; 
+    background-color: #ffffff; 
+    color: #333; 
 }
 
 #menu li a:hover {
-    background-color: #ccc; /* Couleur de fond au survol */
+    background-color: #ccc;
 }
 
 .blink {
@@ -122,18 +129,29 @@ body{
     padding-bottom: 4%;
     padding-top:2%;
     padding-left:2%;
+    padding-right: 2%;
+
 }
 
 .categorieCase{
     padding-bottom: 4%;
     padding-top:2%;
     padding-left:2%;
+    padding-right: 2%;
 }
 
 .categorieProjet{
     padding-bottom: 4%;
     padding-top:2%;
     padding-left:2%;
+    padding-right: 2%;
+}
+
+.categorieExperience{
+    padding-bottom: 4%;
+    padding-top:2%;
+    padding-left:2%;
+    padding-right: 2%;
 }
 
 .titre{
@@ -143,6 +161,10 @@ body{
 
 .stitre{
     margin-left: 11.5%;
+}
+
+.undertitle{
+    margin-left: 2%;
 }
 
 .zone2{
@@ -360,8 +382,8 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    /* display: flex; */
-    /* align-items: center; */
+    /* display: flex;
+    align-items: center; */
     padding: 10px;
     margin-bottom: 5px;
     transition: background-color 0.4s ease;
@@ -419,6 +441,83 @@ body{
     text-decoration: unset;
 }
 .zone4 a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+/* categorieExperience */
+
+.categorieExperience h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.exp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exp .nobutton:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.exp .nobutton {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center; */
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: background-color 0.4s ease;
+    flex:0 0 calc(33% - 10px); /* Deux colonnes avec un espace de 10px entre les boutons */
+    margin-right: 10px; /* Espacement entre les boutons */
+}
+
+.exp .nobutton:last-child {
+    margin-right: 0; /* Supprimer l'espacement à droite pour le dernier bouton */
+}
+
+.exp .nobutton img {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+
+.exp .nobutton.active {
+    background-color: #00a3a6;
+    color: #fff;
+}
+
+.exp .nobutton.active:hover {
+    background-color: #00a3a6;
+}
+
+/* 5 */
+
+.zone5{
+    background-color: #00a3a6;
+    margin: 0%;
+    color: white;
+    font-size: large;
+    padding-bottom: 1%;
+}
+.zone5-content{
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top:2%;
+}
+.zone5 p{
+    text-align:justify;
+}
+.zone5 a{
+    color:white;
+    text-decoration: unset;
+}
+.zone5 a:hover{
     color:white;
     text-decoration: underline;
 }

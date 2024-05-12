@@ -18,7 +18,7 @@ const App = Vue.createApp({
             <Categorie :cont="2"/>
     </div>
     <div id="parabody4">
-        <Categorie :cont="2"/>
+            <Categorie :cont="3"/>
     </div>
 
     `
