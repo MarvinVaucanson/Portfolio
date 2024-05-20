@@ -53,7 +53,6 @@ export default {
                 "Conseil de Vie Lycéenne":9, 
                 "Tutorat":10
             };
-            const licon = [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "./img/projet/douzieclicker.png","./img/projet/kebab.png","./img/projet/labyrinthe.png"];
             const title ="./ experiences";
             const undertitle = ["/ professionel","/ associative","/ autre"]
 
@@ -63,7 +62,16 @@ export default {
                 "/ autre": ["Conseil de Vie Lycéenne", "Tutorat"]
             }
 
-            return { classdezone,classdecategorie,title,undertitle, nomUE, licon, conte, dico };
+            return { classdezone,classdecategorie,title,undertitle, nomUE, conte, dico };
+        }
+        if(props.cont === 4){
+            const classdezone = "zone6";
+            const classdecategorie = "categoriePassion";
+            const numUE = [1, 2, 3, 4, 5, 6, 7,8];
+            const nomUE = ["Photo", "Video", "Escalade", "Montagne"];
+            const licon = ["video", "escalade", "montagne","photo"];
+            const title ="./ passion";
+            return { classdezone,classdecategorie,title,numUE, nomUE, licon, conte };
         }
     },
     methods: {
@@ -118,11 +126,12 @@ export default {
                 <h3>{{ key }}<span id="underscore" class="blink">_</span></h3><br>
                 <div class="exp">
                     <button v-for="(ueName, ueIndex) in elt" :key="ueName" @click="setSelectedUE( getIdbyName(ueName))" class="nobutton" :class="{ active: selected ===  getIdbyName(ueName)}">
-                        <i :class="licon[ueIndex]"></i>{{ ueName }}
+                        </i>{{ ueName }}
                     </button>
                 </div>
             </div>
         </div>
+        
     </div>
 
     </div>

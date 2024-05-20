@@ -27,6 +27,11 @@ body{
     background-image: url(img/projet.png);
 }
 
+#parabody4{
+    background-image: url(img/experiences.jpg);
+    background-size: 70%;
+}
+
 .main{
     background-color: rgb(255, 255, 255);
     margin : 4%;

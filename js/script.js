@@ -8,19 +8,22 @@ const App = Vue.createApp({
     },
 
     template: /*html*/`
-    <div id="parabody2">
+    <section id="parabody2">
             <Categorie :cont="0"/>
         <div id="1">  
             <Categorie :cont="1"/>
         </div>
-    </div>
-    <div id="parabody3">
+    </section>
+    <section id="parabody3">
             <Categorie :cont="2"/>
-    </div>
-    <div id="parabody4">
+    </section>
+    <section id="parabody4">
             <Categorie :cont="3"/>
-    </div>
-
+    </section>
+    <section id="parabody5">
+            <Categorie :cont="4"/>
+    </section>
+    
     `
 });
 App.mount("#categorieApp");
