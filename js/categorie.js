@@ -67,9 +67,9 @@ export default {
         if(props.cont === 4){
             const classdezone = "zone6";
             const classdecategorie = "categoriePassion";
-            const numUE = [1, 2, 3, 4, 5, 6, 7,8];
-            const nomUE = ["Photo", "Video", "Escalade", "Montagne"];
-            const licon = ["video", "escalade", "montagne","photo"];
+            const numUE = [1, 2, 3];
+            const nomUE = ["Video", "Photo", "Escalade"];
+            const licon = ["video", "photo", "escalade"];
             const title ="./ passion";
             return { classdezone,classdecategorie,title,numUE, nomUE, licon, conte };
         }
@@ -102,10 +102,13 @@ export default {
     },
     template: /*html*/ `
     <div class="main">
-        <div v-if:="cont === 0 || cont === 1 || cont === 2" :class="classdecategorie">
+        <div v-if:="cont === 0 || cont === 1 || cont === 2 || cont === 4" :class="classdecategorie">
             <h2>{{ title }}<span id="underscore" class="blink">_</span></h2>
-            <button v-for="ue in numUE" :key="ue" @click="setSelectedUE(ue)" class="nobutton" :class="{ active: selected ===ue }">
+            <button v-for="ue in numUE" :key="ue" @click="setSelectedUE(ue)" class="nobutton" :class="{ active: selected === ue }">
                 <!-- Si c'est un projet-->
+                <div v-if="cont === 4">
+                    <nav>{{ nomUE[ue-1] }}</nav>
+                </div>
                 <div v-if="cont === 2">
                     <img :src="licon[ue-1]"/>
                     <nav>{{ nomUE[ue-1] }}</nav>
@@ -120,7 +123,7 @@ export default {
             </button>
         </div>
 
-        <div v-if="cont === 3" :class="classdecategorie">
+        <div v-if="cont === 3 "  :class="classdecategorie">
             <h2>{{ title }}<span id="underscore" class="blink">_</span></h2>
             <div class="undertitle" v-for="(elt, key) in dico" :key="key">
                 <h3>{{ key }}<span id="underscore" class="blink">_</span></h3><br>

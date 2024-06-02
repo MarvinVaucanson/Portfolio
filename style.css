@@ -20,16 +20,26 @@ body{
 }
 
 #parabody2{
-    background-image: url(img/Competence.png);
+    background-image: url(img/competence.jpg);
+    background-size: 20%;
 }
 
 #parabody3{
-    background-image: url(img/projet.png);
+    background-image: url(img/langage.png);
 }
 
 #parabody4{
+    background-image: url(img/projet.png);
+}
+
+#parabody5{
     background-image: url(img/experiences.jpg);
     background-size: 70%;
+}
+
+#parabody6{
+    background-image: url(img/passion.png);
+    background-size: 50%;
 }
 
 .main{
@@ -153,6 +163,13 @@ body{
 }
 
 .categorieExperience{
+    padding-bottom: 4%;
+    padding-top:2%;
+    padding-left:2%;
+    padding-right: 2%;
+}
+
+.categoriePassion{
     padding-bottom: 4%;
     padding-top:2%;
     padding-left:2%;
@@ -525,4 +542,114 @@ body{
 .zone5 a:hover{
     color:white;
     text-decoration: underline;
+}
+
+/* categoriePassion */
+
+.categoriePassion h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.categoriePassion {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categoriePassion .nobutton:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.categoriePassion .nobutton {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center; */
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: background-color 0.4s ease;
+    flex:0 0 calc(33% - 10px); /* Deux colonnes avec un espace de 10px entre les boutons */
+    margin-right: 10px; /* Espacement entre les boutons */
+}
+
+.categoriePassion .nobutton:last-child {
+    margin-right: 0; /* Supprimer l'espacement à droite pour le dernier bouton */
+}
+
+.categoriePassion .nobutton img {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+
+.categoriePassion .nobutton.active {
+    background-color: #73030d;
+    color: #fff;
+}
+
+.categoriePassion .nobutton.active:hover {
+    background-color: #73030d;
+}
+
+/* 6 */
+
+.zone6{
+    background-color: #73030d;
+    margin: 0%;
+    color: white;
+    font-size: large;
+    padding-bottom: 1%;
+}
+.zone6-content{
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top:2%;
+}
+.zone6 p{
+    text-align:justify;
+}
+.zone6 a{
+    color:white;
+    text-decoration: unset;
+}
+.zone6 a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
 }
