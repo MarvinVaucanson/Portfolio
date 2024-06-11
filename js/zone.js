@@ -26,7 +26,9 @@ export default {
                     "UE 5",
                     "UE 6"
                 ],
-                cheminImages: "chemin/vers/repertoire/contenant/images/"
+                cheminImages: "chemin/vers/repertoire/contenant/images/",
+                galerytab:[0]
+
             },
             1: {
                 type: "",
@@ -50,11 +52,12 @@ export default {
                     `Docker est une plateforme de virtualisation légère qui permet aux développeurs de créer, de déployer et d'exécuter des applications dans des conteneurs logiciels. Il offre une gestion efficace des environnements de développement et de production, ainsi qu'une portabilité des applications entre différents systèmes.`,             
                     `Git est un système de contrôle de version distribué largement utilisé pour le suivi des modifications apportées au code source lors du développement logiciel. Il permet aux équipes de collaborer efficacement, de gérer les branches de code et de suivre l'historique des modifications.`,
                 ],
-                cheminImages: "img/langages/"
+                cheminImages: "img/langages/",
+                galerytab:[0]
             },
             2: {
                 type: "",
-                path: "/projet",
+                path: "/projets",
                 numUE : [1, 2, 3, 4, 5, 6, 7,8],
                 nomUE : ["Aide à la décision", "Daily Info", "Portfolio", "Tourisme App", "Kamouflage Web", "Douzie Clicker", "keb'app","Labyrinthe"],
                 licon : ["graphe","daily","portfolio","tourisme","kamouflagek","douzieclicker","kebab","labyrinthe"], 
@@ -69,7 +72,8 @@ export default {
                     `Une petite faim ? Keb'app est là pour toi ! SAE de S1 d'IUT en HTML/CSS`,
                     `Labyrinthe, projet de fin de lycée en cours de NSI. Battez vos amis dans ce jeu python pour parcouris le plus de labyrinthe dans un temps limité. Bonne chance !`,
                 ],
-                cheminImages: "./img/projet/"
+                cheminImages: "./img/projet/",
+                galerytab:[1,1,1,1,1,1,1,1,1,1]
             },
             3: {
                 type: "",
@@ -88,26 +92,25 @@ export default {
                     `HTML et CSS sont les langages de base du développement web. HTML est utilisé pour structurer le contenu des pages web, tandis que CSS est utilisé pour styliser et mettre en forme ces contenus, créant ainsi des expériences visuelles attrayantes et cohérentes.`,                    
                     `PHP est un langage de script côté serveur largement utilisé pour le développement web. Il est principalement utilisé pour générer des contenus dynamiques, traiter les formulaires, interagir avec les bases de données et bien plus encore.`,                    
                 ],
-                cheminImages: "./img/experiences/"
+                cheminImages: "./img/experiences/",
+                galerytab:[0,1,0,1,1,1,1,1,0,0]
+
             },
             4: {
                 type: "",
-                path: "/langages",
-                numUE : [1, 2, 3, 4],
-                nomUE : ["Montagne", "Vidéo", "Photo", "Escalade"],
-                licon : ["montagne","daily","portfolio","tourisme","kamouflagek","douzieclicker","kebab","labyrinthe"], 
+                path: "/passions",
+                numUE : [1, 2, 3,4],
+                nomUE : ["Vidéo", "Photo", "Escalade", "+"],
+                licon : ["vidéo", "photo", "escalade", "+"],
                 // licon : [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"],
                 texte: [
                     `Python est un langage de programmation polyvalent, reconnu pour sa simplicité syntaxique et sa lisibilité. Il est largement utilisé dans le développement web, le machine learning, l'automatisation de tâches et bien plus encore.`,
                     `Le langage C est un pilier de la programmation informatique, réputé pour son efficacité et sa proximité avec le matériel. Il est souvent utilisé dans le développement de systèmes d'exploitation, de logiciels embarqués et d'applications nécessitant des performances optimales.`,
                     `Java est un langage de programmation populaire, reconnu pour sa portabilité et sa robustesse. Il est largement utilisé pour développer des applications d'entreprise, des applications Android, des systèmes distribués et bien d'autres projets.`,                    
                     `Kotlin est un langage moderne conçu pour interagir parfaitement avec Java, en particulier pour le développement d'applications Android. Android Studio est l'environnement de développement intégré (IDE) de prédilection pour créer des applications Android avec Kotlin, offrant des fonctionnalités avancées pour faciliter le développement.`,                    
-                    `JavaScript est le langage de programmation essentiel pour le développement web. Il permet d'ajouter des fonctionnalités dynamiques et interactives aux sites web, de créer des applications web côté client, des jeux et bien plus encore.`,                    
-                    `Vue.js est un framework JavaScript progressif et accessible, utilisé pour construire des interfaces utilisateur interactives et dynamiques. Il offre une architecture flexible et des performances optimales, ce qui en fait un choix populaire pour le développement d'applications web modernes.`,                  
-                    `HTML et CSS sont les langages de base du développement web. HTML est utilisé pour structurer le contenu des pages web, tandis que CSS est utilisé pour styliser et mettre en forme ces contenus, créant ainsi des expériences visuelles attrayantes et cohérentes.`,                    
-                    `PHP est un langage de script côté serveur largement utilisé pour le développement web. Il est principalement utilisé pour générer des contenus dynamiques, traiter les formulaires, interagir avec les bases de données et bien plus encore.`,                    
                 ],
-                cheminImages: "./img/projet/"
+                cheminImages: "./img/projet/",
+                galerytab:[1,1,1,1]
             },
 
         };
@@ -139,10 +142,9 @@ export default {
         <div class="zone-content">
             <p>{{ texte[selected] }}</p>
             <p>link</p>
-            <Galery :cont="cont" :selected="selected"/>
+            <Galery v-if="galerytab[selected] === 1" :cont="cont" :selected="selected"/>
         </div>
     </div>
-
     `
 
 }

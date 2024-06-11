@@ -13,10 +13,8 @@ const App = Vue.createApp({
     <section id="parabody2">
             <Categorie :cont="0"/>
     </section>
-        <div id="1">
     <section id="parabody3">
             <Categorie :cont="1"/>
-        </div>
     </section>
     <section id="parabody4">
             <Categorie :cont="2"/>

@@ -5,27 +5,39 @@ export default {
         return {
             currentIndex: this.selected || 0,
             images: {
-                0: ["image1.jpg", "image2.jpg", "image3.jpg"],
+                0: ["none", "none", "none"],
                 1: ["image4.jpg", "image5.jpg", "image6.jpg"],
                 2: ["image7.jpg", "image8.jpg", "image9.jpg"],
                 3: ["image10.jpg", "image11.jpg", "image12.jpg"],
-                4: ["image13.jpg", "image14.jpg", "image15.jpg"],
-            }[this.cont]
+                4: ["video", "photo", "escalade","+"],
+            }[this.cont],
+            cat :["competences","projets","langages","experiences","passion"],
+            nbimages: {
+                "video" : 6,
+                "photo" : 3,
+            }
         };
     },
     methods: {
         prev() {
-            this.currentIndex = (this.currentIndex + this.images.length - 1) % this.images.length;
+            this.currentIndex = (this.currentIndex + this.nbimages[this.images[this.selected]] - 1) % this.nbimages[this.images[this.selected]];
         },
         next() {
-            this.currentIndex = (this.currentIndex + 1) % this.images.length;
+            this.currentIndex = (this.currentIndex + 1) % this.nbimages[this.images[this.selected]];
+            console.log(this.nbimages[this.images[selected]])
         }
     },
     template: /*html*/ `
     <div class="carousel">
-        <button @click="prev" class="carousel-button prev">‹</button>
-        <img :src="'./path/to/images/' + images[currentIndex]" class="carousel-image"/>
-        <button @click="next" class="carousel-button next">›</button>
+        <button @click="prev" class="carousel-button prev">
+            <span class="arrow left"></span>
+        </button>
+            <div class="carousel-image-container">
+                <img :src="'../img/'+ cat[cont] + '/' + images[selected] + '/' + currentIndex +'.jpg'" class="carousel-image"/>
+            </div>
+        <button @click="next" class="carousel-button next">
+            <span class="arrow right"></span>
+        </button>
     </div>
     `,
     watch: {

@@ -67,10 +67,10 @@ export default {
         if(props.cont === 4){
             const classdezone = "zone6";
             const classdecategorie = "categoriePassion";
-            const numUE = [1, 2, 3];
-            const nomUE = ["Video", "Photo", "Escalade"];
-            const licon = ["video", "photo", "escalade"];
-            const title ="./ passion";
+            const numUE = [1, 2, 3, 4];
+            const nomUE = ["Video", "Photo", "Escalade", "+"];
+            const licon = ["video", "photo", "escalade", "+"];
+            const title ="./ passions";
             return { classdezone,classdecategorie,title,numUE, nomUE, licon, conte };
         }
     },
@@ -129,7 +129,7 @@ export default {
                 <h3>{{ key }}<span id="underscore" class="blink">_</span></h3><br>
                 <div class="exp">
                     <button v-for="(ueName, ueIndex) in elt" :key="ueName" @click="setSelectedUE( getIdbyName(ueName))" class="nobutton" :class="{ active: selected ===  getIdbyName(ueName)}">
-                        </i>{{ ueName }}
+                        {{ ueName }}
                     </button>
                 </div>
             </div>
@@ -137,10 +137,9 @@ export default {
         
     </div>
 
-    </div>
 <div :class="classdezone">
     <Zone :cont="conte" :selected="selected"/>
-<div>
+</div>
 
     `
 }
