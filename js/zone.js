@@ -19,14 +19,14 @@ export default {
                 nomUE: ["Réaliser", "Optimiser", "Administrer", "Gérer", "Conduire", "Collaborer"],
                 licon: ["fa-solid fa-gears", "fa-solid fa-microchip", "fa-solid fa-server", "fa-solid fa-database", "fas fa-laptop", "fas fa-users"],
                 texte: [
-                    "L'UE 1, Développer une application, est un cours typique dans les programmes de formation en informatique, en particulier dans un Bachelor Universitaire de Technologie (BUT) en informatique. Cette unité d'enseignement vise à fournir aux étudiants les compétences et les connaissances nécessaires pour développer des applications logicielles à partir de zéro, en mettant l'accent sur les principes de base du développement de logiciels et en utilisant souvent des langages de programmation et des technologies populaires.",
-                    "L'UE 2, Optimiser une application",
-                    "Coubeh",
-                    "UE 4",
-                    "UE 5",
-                    "UE 6"
+                    "L'UE 1, Développer une application, cette unité d'enseignement vise à fournir aux étudiants les compétences et les connaissances nécessaires pour développer des applications logicielles à partir de zéro, en mettant l'accent sur les principes de base du développement de logiciels et en utilisant souvent des langages de programmation et des technologies populaires. Elle est une des plus importantes et est presque associés à tout mes projets se trouvant sur le site.",
+                    "L'UE 2, Optimiser une application, Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d’exécution, précision, consommation de ressources..",
+                    "L'UE 3, Administrer, Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d’une organisation",
+                    "UE 4, Gérer une base de donnée, Concevoir, gérer, administrer et exploiter les données de l’entreprise et mettre à disposition toutes les informations pour un bon pilotage de l’entreprise",
+                    "UE 5, Conduire un projet, Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles",
+                    "UE 6, Collaborer, Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique"
                 ],
-                cheminImages: "chemin/vers/repertoire/contenant/images/",
+                cheminImages: "img/competences/",
                 galerytab:[0]
 
             },
