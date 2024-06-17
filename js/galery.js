@@ -3,18 +3,22 @@ export default {
     props: ['cont', 'selected'],
     data() {
         return {
-            currentIndex: this.selected || 0,
+            currentIndex: 0,
             images: {
                 0: ["none", "none", "none"],
                 1: ["image4.jpg", "image5.jpg", "image6.jpg"],
-                2: ["image7.jpg", "image8.jpg", "image9.jpg"],
+                2: ["graphe", "daily", "none","tourism","none","none","kebap"],
                 3: ["image10.jpg", "image11.jpg", "image12.jpg"],
                 4: ["video", "photo", "escalade","+"],
             }[this.cont],
-            cat :["competences","projets","langages","experiences","passion"],
+            cat :["competences","langages","projet","experiences","passion"],
             nbimages: {
+                "graphe": 4,
                 "video" : 6,
                 "photo" : 3,
+                "daily": 6,
+                "tourism": 4,
+                "kebap":3,
             }
         };
     },
@@ -33,7 +37,7 @@ export default {
             <span class="arrow left"></span>
         </button>
             <div class="carousel-image-container">
-                <img :src="'../img/'+ cat[cont] + '/' + images[selected] + '/' + currentIndex +'.jpg'" class="carousel-image"/>
+                <img :src="'./img/'+ cat[cont] + '/' + images[selected] + '/' + currentIndex +'.png'" class="carousel-image"/>
             </div>
         <button @click="next" class="carousel-button next">
             <span class="arrow right"></span>

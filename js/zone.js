@@ -26,15 +26,17 @@ export default {
                     "UE 5, Conduire un projet, Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles",
                     "UE 6, Collaborer, Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique"
                 ],
+                textesae:["Daily Info, Keb'App, Aide à la décision","Création d'un algo de tri (S1), Daily Info, Aide à la décision","SAE Guide d'installation d'un poste de travail, SAE Installation et utilisation de Linux","Daily Info, SAE PowerBI, SAE Gestion BD","Rédaction de cahier des charges pour tout les projets","Poster, Campagne Fictive pour Auvergnat Cola"],
                 cheminImages: "img/competences/",
-                galerytab:[0]
+                galerytab:[0],
+                link:[0]
 
             },
             1: {
                 type: "",
                 path: "/langages",
-                numUE: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-                nomUE: ["Python", "C", "Java", "AndroidStudio_Kotlin", "JS", "VueJS", "HTML_CSS", "PHP", "Symfony", "SQL", "PowerBI", "MongoDB", "Docker", "GIT"],
+                numUE: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+                nomUE: ["Python", "C", "Java", "AndroidStudio_Kotlin", "JS", "VueJS", "HTML_CSS", "PHP", "Symfony", "SQL", "PowerBI", "MongoDB", "Docker", "GIT", "Jinja2"],
                 licon: ["fa-brands fa-python", "fa-solid fa-microchip", "fa-brands fa-java","fa-brands fa-android" ,"fa-brands fa-js", "fa-brands fa-vuejs","fa-brands fa-html5", "fa-brands fa-php","fa-brands fa-symfony","fa-solid fa-database","fa-brands fa-microsoft","fa-brands fa-envira","fa-brands fa-docker","fa-brands fa-gitlab"],
                 texte: [
                     `Python est un langage de programmation polyvalent, reconnu pour sa simplicité syntaxique et sa lisibilité. Il est largement utilisé dans le développement web, le machine learning, l'automatisation de tâches et bien plus encore.`,
@@ -52,28 +54,31 @@ export default {
                     `Docker est une plateforme de virtualisation légère qui permet aux développeurs de créer, de déployer et d'exécuter des applications dans des conteneurs logiciels. Il offre une gestion efficace des environnements de développement et de production, ainsi qu'une portabilité des applications entre différents systèmes.`,             
                     `Git est un système de contrôle de version distribué largement utilisé pour le suivi des modifications apportées au code source lors du développement logiciel. Il permet aux équipes de collaborer efficacement, de gérer les branches de code et de suivre l'historique des modifications.`,
                 ],
+                textesae:[],
                 cheminImages: "img/langages/",
-                galerytab:[0]
+                galerytab:[0],
+                link:[0]
             },
             2: {
                 type: "",
                 path: "/projets",
-                numUE : [1, 2, 3, 4, 5, 6, 7,8],
-                nomUE : ["Aide à la décision", "Daily Info", "Portfolio", "Tourisme App", "Kamouflage Web", "Douzie Clicker", "keb'app","Labyrinthe"],
-                licon : ["graphe","daily","portfolio","tourisme","kamouflagek","douzieclicker","kebab","labyrinthe"], 
+                numUE : [1, 2, 3, 4, 5, 6, 7, 8],
+                nomUE : ["Aide à la décision", "Daily Info", "Portfolio", "Tourisme App", "Kamouflage Web", "Douzie Clicker", "keb'app","Labyrinthe","Poster"],
+                licon : ["graphe","daily","portfolio","tourisme","kamouflagek","douzieclicker","kebab","labyrinthe","poster"], 
                 // licon : [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"],
                 texte: [
-                    `SAE réalisé en java lors du deuxième semestre d'IUT. On devait réaliser un logiciel pour aider à la décision d'un chemin à travers un graphe complexe. Le projet à été réalisé from scratch sans librairies de gestion de graph`,
+                    `SAE réalisé en java lors du deuxième semestre d'IUT. On devait réaliser un logiciel pour aider à la décision d'un chemin à travers un graphe complexe. Le projet à été réalisé from scratch sans librairies de gestion de graphe. Nous avons implémenté l'algorithme de parcurs DijKstra`,
                     `Daily Info est un site web PHP qui permet aux joueurs de recevoirent chaque jour un nouveau défi en lien avec l'IUT et l'informatique. Il existe plein de type de mission ! SAE su S3 d'IUT`,
-                    `Magnifique site web sur lequel vous vous trouvez actuellement ! Crée en Vue.js il retrace l'entièreté de mon parcours professionenl et associatif`,
-                    `Tourisme App ! Application mobile utilisant les données de data.grandlyon pour vous conseillez des sorties`,
+                    `Magnifique site web sur lequel vous vous trouvez actuellement ! Crée en Vue.js il retrace l'entièreté de mon parcours professionnel et associatif`,
+                    `Tourisme App ! Application mobile utilisant les données de data.grandlyon pour vous conseillez des sorties en ville dans Lyon`,
                     `Kamouflage Web, site perso en Vue.JS pour la création d'une boutique en ligne et d'autres surprises. En cours de DEV`,
                     `Clique, clique, clique, clique ! Toujours plus ! Gagne le plus de twolve dans ce jeu de type clicker. Projet de web de moitié de S2 d'IUT`,
                     `Une petite faim ? Keb'app est là pour toi ! SAE de S1 d'IUT en HTML/CSS`,
                     `Labyrinthe, projet de fin de lycée en cours de NSI. Battez vos amis dans ce jeu python pour parcouris le plus de labyrinthe dans un temps limité. Bonne chance !`,
                 ],
                 cheminImages: "./img/projet/",
-                galerytab:[1,1,1,1,1,1,1,1,1,1]
+                galerytab:[1,1,0,1,0,0,1,1,1,1,1],
+                link:[0,"https://dailyinfos.fun","https://baptiste.rousselot.name/Portfolio",0,0,0,0,0,0]
             },
             3: {
                 type: "",
@@ -92,8 +97,10 @@ export default {
                     `HTML et CSS sont les langages de base du développement web. HTML est utilisé pour structurer le contenu des pages web, tandis que CSS est utilisé pour styliser et mettre en forme ces contenus, créant ainsi des expériences visuelles attrayantes et cohérentes.`,                    
                     `PHP est un langage de script côté serveur largement utilisé pour le développement web. Il est principalement utilisé pour générer des contenus dynamiques, traiter les formulaires, interagir avec les bases de données et bien plus encore.`,                    
                 ],
+                textesae:[],
                 cheminImages: "./img/experiences/",
-                galerytab:[0,1,0,1,1,1,1,1,0,0]
+                galerytab:[0,1,0,1,1,1,1,1,0,0],
+                link:[0]
 
             },
             4: {
@@ -109,8 +116,10 @@ export default {
                     `Java est un langage de programmation populaire, reconnu pour sa portabilité et sa robustesse. Il est largement utilisé pour développer des applications d'entreprise, des applications Android, des systèmes distribués et bien d'autres projets.`,                    
                     `Kotlin est un langage moderne conçu pour interagir parfaitement avec Java, en particulier pour le développement d'applications Android. Android Studio est l'environnement de développement intégré (IDE) de prédilection pour créer des applications Android avec Kotlin, offrant des fonctionnalités avancées pour faciliter le développement.`,                    
                 ],
+                textesae:[],
                 cheminImages: "./img/projet/",
-                galerytab:[1,1,1,1]
+                galerytab:[1,1,1,1],
+                link:[0]
             },
 
         };
@@ -134,17 +143,22 @@ export default {
         <div class="titre">// {{ type }} {{ numUE[selected] }} - {{ nomUE[selected] }}</div>
         <div class="zone-content">
             <p>{{ texte[selected] }}</p>
+            <div v-if="cont === 0">
+                <p>Les SAE associés sont : {{ textesae[selected] }}</p>
+            </div>
         </div>
+
     </div>
 
     <div v-if="cont === 2||cont === 3|| cont === 4">
         <div class="titre">{{ nomUE[selected] }}</div>
         <div class="zone-content">
             <p>{{ texte[selected] }}</p>
-            <p>link</p>
+            <p v-if="link[selected]!==0">
+                <nav>Lien : <a v-bind:href='link[selected]'>{{ nomUE[selected] }}</a></nav>
+            </p>
             <Galery v-if="galerytab[selected] === 1" :cont="cont" :selected="selected"/>
         </div>
     </div>
     `
-
 }

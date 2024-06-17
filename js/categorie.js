@@ -23,9 +23,9 @@ export default {
         if(props.cont === 1){
             const classdezone = "zone3";
             const classdecategorie = "categorieCase";
-            const numUE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-            const nomUE = ["Python", "C", "Java", "AndroidStudio / Kotlin", "JS", "VueJS", "HTML/CSS", "PHP", "Symfony", "SQL", "PowerBI", "MongoDB", "Docker", "GIT"];
-            const licon = ["fa-brands fa-python", "fa-solid fa-microchip", "fa-brands fa-java","fa-brands fa-android" ,"fa-brands fa-js", "fa-brands fa-vuejs","fa-brands fa-html5", "fa-brands fa-php","fa-brands fa-symfony","fa-solid fa-database","fa-brands fa-microsoft","fa-brands fa-envira","fa-brands fa-docker","fa-brands fa-gitlab"];
+            const numUE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+            const nomUE = ["Python", "C", "Java", "AndroidStudio / Kotlin", "JS", "VueJS", "HTML/CSS", "PHP", "Symfony", "SQL", "PowerBI", "MongoDB", "Docker", "GIT", "Jinja2"];
+            const licon = ["fa-brands fa-python", "fa-solid fa-microchip", "fa-brands fa-java","fa-brands fa-android" ,"fa-brands fa-js", "fa-brands fa-vuejs","fa-brands fa-html5", "fa-brands fa-php","fa-brands fa-symfony","fa-solid fa-database","fa-brands fa-microsoft","fa-brands fa-envira","fa-brands fa-docker","fa-brands fa-gitlab","fa-solid fa-torii-gate"];
             const title ="./ langages";
             return { classdezone,classdecategorie,title,numUE, nomUE, licon, conte };
         }
