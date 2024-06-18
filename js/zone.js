@@ -62,7 +62,7 @@ export default {
             2: {
                 type: "",
                 path: "/projets",
-                numUE : [1, 2, 3, 4, 5, 6, 7, 8],
+                numUE : [1, 2, 3, 4, 5, 6, 7, 8, 9],
                 nomUE : ["Aide à la décision", "Daily Info", "Portfolio", "Tourisme App", "Kamouflage Web", "Douzie Clicker", "keb'app","Labyrinthe","Poster"],
                 licon : ["graphe","daily","portfolio","tourisme","kamouflagek","douzieclicker","kebab","labyrinthe","poster"], 
                 // licon : [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"],
@@ -75,9 +75,10 @@ export default {
                     `Clique, clique, clique, clique ! Toujours plus ! Gagne le plus de twolve dans ce jeu de type clicker. Projet de web de moitié de S2 d'IUT`,
                     `Une petite faim ? Keb'app est là pour toi ! SAE de S1 d'IUT en HTML/CSS`,
                     `Labyrinthe, projet de fin de lycée en cours de NSI. Battez vos amis dans ce jeu python pour parcouris le plus de labyrinthe dans un temps limité. Bonne chance !`,
+                    `Connaissez vous le PIET ? Un langage de programmation basé sur une grille de couleur ! Ce poster scientifique résume tout !`,
                 ],
                 cheminImages: "./img/projet/",
-                galerytab:[1,1,0,1,0,0,1,1,1,1,1],
+                galerytab:[1,1,0,1,0,0,1,0,1],
                 link:[0,"https://dailyinfos.fun","https://baptiste.rousselot.name/Portfolio",0,0,0,0,0,0]
             },
             3: {
@@ -88,14 +89,20 @@ export default {
                 licon : ["INRAE","pepiteshelo","maisonIvey","endorah","galoche","bde","art","yfc","cvl","tutorat"], 
                 // licon : [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"],
                 texte: [
-                    `Stage de zinzin`,
-                    `Community manager`,
-                    `La meme`,                    
-                    `Association de fifou`,
-                    `JavaScript est le langage de programmation essentiel pour le développement web. Il permet d'ajouter des fonctionnalités dynamiques et interactives aux sites web, de créer des applications web côté client, des jeux et bien plus encore.`,                    
-                    `Vue.js est un framework JavaScript progressif et accessible, utilisé pour construire des interfaces utilisateur interactives et dynamiques. Il offre une architecture flexible et des performances optimales, ce qui en fait un choix populaire pour le développement d'applications web modernes.`,                  
-                    `HTML et CSS sont les langages de base du développement web. HTML est utilisé pour structurer le contenu des pages web, tandis que CSS est utilisé pour styliser et mettre en forme ces contenus, créant ainsi des expériences visuelles attrayantes et cohérentes.`,                    
-                    `PHP est un langage de script côté serveur largement utilisé pour le développement web. Il est principalement utilisé pour générer des contenus dynamiques, traiter les formulaires, interagir avec les bases de données et bien plus encore.`,                    
+                    `Stage de validation de la 2eme année de BUT. J'ai travaillé avec les équipes d'INRAE Pollutions Agricoles Diffuses (PollDiff), sur GeoMelba un logiciel de modélisation de bassin versant. Plus d'info sur leurs sites web. Attente du rendu du rapport pour poster les images.`,
+                    `Des meumbles de seconde main ! Pendant 1 an j'ai géré l'instagram et le facebook`,
+                    `Job d'été. Gestion de l'instagram et de la boutique en ligne de cette micro entreprise de brocante.`,                    
+                    `Endorah est une équipe de créateurs passionnés par le jeu Minecraft dont je fais partis depuis 4 ans déjà. Nous regroupons, constructeurs, décorateurs, développeurs Java et web, graphistes, trailer makers et bien d’autres talents pour mener à bien nos projets !
+De la conception à la réalisation, nous créons nos projets de A à Z en accordant une attention particulière à chaque demande. La qualité finale et le succès de nos œuvres sont des valeurs essentielles pour nous.
+Ensemble, nous pouvons donner vie à votre projet !
+
+Plus d'image sur notres sites web !`,
+                    `Le collectif La Galoche est né de l’envie d’ouvrir un café associatif, lieu convivial et chaleureux sur Sathonay–Camp. Il a été créé par des habitant.es de Sathonay-Camp désirant un lieu de rencontre animé, ouvert à toutes et tous pour faire émerger des initiatives locales : concerts, conférences, théâtre, débats et échanges de savoirs. Le projet a grandi pour devenir aujourd’hui un lieu-ressource convivial, décontracté et citoyen réunissant à la fois un espace de travail partagé, une épicerie, un café associatif avec une programmation culturelle et festive. Formé au bar que je tiens régulièrement j'organise aussi des soirées loups garous et jeux de société.`,                    
+                    `Mandat de 2023 à 2024. Responsable du pôle culture j'ai dirigé la pblication de la radio culture, un mensuel sur instagram de culture. Ainsi qu'organisé de nombreux évènements.`,                  
+                    `L'art et la science ! Deux choses passionnantes. Dépassez les limites de la réalité en observant l'invisible ! Cela ne suffit pas ? Avez vous déjà rêvez de voir le son d'une manière inédite ? Non ? C'est pas grave parce qu'on l'a fait ! Exposition à l'ENS pour la fête de la science.`,                    
+                    `Lycée engagé pour le climat et la justice sociale ! Nous sommes plus chauds que le climat !`,
+                    `Elu pour être le représentant des lycéens de la cité scolaire de saint exupéry.`,
+                    `Transmettre mes connaissances, voir la même étincelle que moi dans les yeux des autres !`
                 ],
                 textesae:[],
                 cheminImages: "./img/experiences/",
@@ -111,10 +118,10 @@ export default {
                 licon : ["vidéo", "photo", "escalade", "+"],
                 // licon : [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"],
                 texte: [
-                    `Python est un langage de programmation polyvalent, reconnu pour sa simplicité syntaxique et sa lisibilité. Il est largement utilisé dans le développement web, le machine learning, l'automatisation de tâches et bien plus encore.`,
-                    `Le langage C est un pilier de la programmation informatique, réputé pour son efficacité et sa proximité avec le matériel. Il est souvent utilisé dans le développement de systèmes d'exploitation, de logiciels embarqués et d'applications nécessitant des performances optimales.`,
-                    `Java est un langage de programmation populaire, reconnu pour sa portabilité et sa robustesse. Il est largement utilisé pour développer des applications d'entreprise, des applications Android, des systèmes distribués et bien d'autres projets.`,                    
-                    `Kotlin est un langage moderne conçu pour interagir parfaitement avec Java, en particulier pour le développement d'applications Android. Android Studio est l'environnement de développement intégré (IDE) de prédilection pour créer des applications Android avec Kotlin, offrant des fonctionnalités avancées pour faciliter le développement.`,                    
+                    `J'écris, réalise, tourne, monte, projète mes propres court métrage ! Pour le Nicon Festival ou pour le plaisir avec mes amis. Toujours une caméra à proximité pour capter tout ce que je vois et imagines.`,
+                    `La photo, l'art de saisir un instant à jamais. Toujours pour essayer de transmettre des émotions d'un instant.`,
+                    `Grimpeur sur roche depuis toujours, les murs de blocs et de voies indoor sont devenues mon sport favoris. Toujours à la recherche d'amis avec qui peut être, enfin réussir à atteindre le sommet`,                    
+                    `Science, Guitare, Bande Dessiné, Musique, Jeux Vidéos... Je ne manque pas de passion ni de passe temps.`,                    
                 ],
                 textesae:[],
                 cheminImages: "./img/projet/",

@@ -34,7 +34,7 @@ export default {
             const classdecategorie = "categorieProjet";
             const numUE = [1, 2, 3, 4, 5, 6, 7, 8, 9];
             const nomUE = ["Aide à la décision", "Daily Info", "Portfolio", "Tourisme App", "Kamouflage Web", "Douzie Clicker", "keb'app","Labyrinthe","Poster"];
-            const licon = [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "./img/projet/douzieclicker.png","./img/projet/kebab.png","./img/projet/labyrinthe.png"];
+            const licon = [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "./img/projet/douzieclicker.png","./img/projet/kebab.png","./img/projet/labyrinthe.png","./img/projet/poster.png"];
             const title ="./ projet";
             return { classdezone,classdecategorie,title,numUE, nomUE, licon, conte };
         }

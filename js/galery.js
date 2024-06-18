@@ -7,7 +7,7 @@ export default {
             images: {
                 0: ["none", "none", "none"],
                 1: ["image4.jpg", "image5.jpg", "image6.jpg"],
-                2: ["graphe", "daily", "none","tourism","none","none","kebap"],
+                2: ["graphe", "daily", "none","tourism","none","none","kebap","none","poster"],
                 3: ["image10.jpg", "image11.jpg", "image12.jpg"],
                 4: ["video", "photo", "escalade","+"],
             }[this.cont],
@@ -19,6 +19,7 @@ export default {
                 "daily": 6,
                 "tourism": 4,
                 "kebap":3,
+                "poster":6,
             }
         };
     },
