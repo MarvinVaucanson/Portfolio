@@ -79,7 +79,7 @@ export default {
                 ],
                 cheminImages: "./img/projet/",
                 galerytab:[1,1,0,1,0,0,1,0,1],
-                link:[0,"https://dailyinfos.fun","https://baptiste.rousselot.name/Portfolio",0,0,0,0,0,0]
+                link:["https://github.com/MarvinVaucanson/sae_graphe/tree/main/sae-125-s2-logiciel-d-aide-a-la-decisions","https://dailyinfos.fun","https://baptiste.rousselot.name/Portfolio","https://github.com/MarvinVaucanson/DevMobile",0,"https://github.com/MarvinVaucanson/DouzieClicker",0,0,"https://github.com/MarvinVaucanson/Labyrinthe",0]
             },
             3: {
                 type: "",
@@ -106,9 +106,9 @@ Plus d'image sur notres sites web !`,
                 ],
                 textesae:[],
                 cheminImages: "./img/experiences/",
-                galerytab:[0,1,0,1,1,1,1,1,0,0],
-                link:[0]
-
+                // galerytab:[0,1,0,1,1,1,1,1,0,0],
+                galerytab:[0,0,0,0,0,0,0,0,0,0],
+                link:["https://polldiff.lyon-grenoble.hub.inrae.fr/recherche/gestion-integree-du-bassin-versant/jeu-serieux-causerie","https://www.instagram.com/lespepitesdheloise/","https://www.instagram.com/maison.ivey/?hl=fr","https://endorah.net/","https://lagaloche.fr/","https://www.instagram.com/bde_info/",0,0,"https://www.instagram.com/cvl_stex_lyon/?hl=fr",0]
             },
             4: {
                 type: "",
@@ -121,12 +121,12 @@ Plus d'image sur notres sites web !`,
                     `J'écris, réalise, tourne, monte, projète mes propres court métrage ! Pour le Nicon Festival ou pour le plaisir avec mes amis. Toujours une caméra à proximité pour capter tout ce que je vois et imagines.`,
                     `La photo, l'art de saisir un instant à jamais. Toujours pour essayer de transmettre des émotions d'un instant.`,
                     `Grimpeur sur roche depuis toujours, les murs de blocs et de voies indoor sont devenues mon sport favoris. Toujours à la recherche d'amis avec qui peut être, enfin réussir à atteindre le sommet`,                    
-                    `Science, Guitare, Bande Dessiné, Musique, Jeux Vidéos... Je ne manque pas de passion ni de passe temps.`,                    
+                    `Science, Guitare, Bande Dessiné, Musique, Urbex, Jeux Vidéos... Je ne manque pas de passion ni de passe temps.`,                    
                 ],
                 textesae:[],
                 cheminImages: "./img/projet/",
-                galerytab:[1,1,1,1],
-                link:[0]
+                galerytab:[0],
+                link:["https://www.youtube.com/channel/UC-O2kjB-UuN_QOCCvl6PfjQ",0,0,0]
             },
 
         };
