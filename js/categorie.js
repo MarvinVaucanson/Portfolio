@@ -17,7 +17,7 @@ export default {
             const numUE = [1, 2, 3, 4, 5, 6];
             const nomUE = ["Réaliser", "Optimiser", "Administrer", "Gérer", "Conduire", "Collaborer"];
             const licon = ["fa-solid fa-gears", "fa-solid fa-microchip", "fa-solid fa-server", "fa-solid fa-database", "fas fa-laptop", "fas fa-users"];
-            const title ="./ compétence";
+            const title ="./ compétences";
             return { classdezone,classdecategorie,type,title,numUE, nomUE, licon,conte };
         }
         if(props.cont === 1){
@@ -48,7 +48,7 @@ export default {
                 "Endorah":4,
                 "La Galoche":5,
                 "BDE Info":6,
-                "Art et Science":7,
+                "Arts et Sciences":7,
                 "Youth For Climate":8,
                 "Conseil de Vie Lycéenne":9, 
                 "Tutorat":10
@@ -57,9 +57,9 @@ export default {
             const undertitle = ["/ professionel","/ associative","/ autre"]
 
             const dico = {
-                "/ professionel": ["INRAE", "Pepites d'Héloïse", "Maison Ivey"],
-                "/ associative": ["Endorah", "La Galoche", "BDE Info", "Art et Science", "Youth For Climate"],
-                "/ autre": ["Conseil de Vie Lycéenne", "Tutorat"]
+                "/ professionelles": ["INRAE", "Pepites d'Héloïse", "Maison Ivey"],
+                "/ associatives": ["Endorah", "La Galoche", "BDE Info", "Arts et Sciences", "Youth For Climate"],
+                "/ autres": ["Conseil de Vie Lycéenne", "Tutorat"]
             }
 
             return { classdezone,classdecategorie,title,undertitle, nomUE, conte, dico };
@@ -86,7 +86,7 @@ export default {
                 "Endorah":4,
                 "La Galoche":5,
                 "BDE Info":6,
-                "Art et Science":7,
+                "Arts et Sciences":7,
                 "Youth For Climate":8,
                 "Conseil de Vie Lycéenne":9, 
                 "Tutorat":10

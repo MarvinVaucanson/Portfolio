@@ -19,14 +19,14 @@ export default {
                 nomUE: ["Réaliser", "Optimiser", "Administrer", "Gérer", "Conduire", "Collaborer"],
                 licon: ["fa-solid fa-gears", "fa-solid fa-microchip", "fa-solid fa-server", "fa-solid fa-database", "fas fa-laptop", "fas fa-users"],
                 texte: [
-                    "L'UE 1, Développer une application, cette unité d'enseignement vise à fournir aux étudiants les compétences et les connaissances nécessaires pour développer des applications logicielles à partir de zéro, en mettant l'accent sur les principes de base du développement de logiciels et en utilisant souvent des langages de programmation et des technologies populaires. Elle est une des plus importantes et est presque associés à tout mes projets se trouvant sur le site.",
+                    "L'UE 1, Développer une application, cette unité d'enseignement vise à fournir aux étudiants les compétences et les connaissances nécessaires pour développer des applications logicielles à partir de zéro, en mettant l'accent sur les principes de base du développement de logiciels et en utilisant souvent des langages de programmation et des technologies populaires. Elle est une des plus importantes et est presque associés à tous mes projets se trouvant sur le site.",
                     "L'UE 2, Optimiser une application, Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d’exécution, précision, consommation de ressources..",
                     "L'UE 3, Administrer, Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d’une organisation",
                     "UE 4, Gérer une base de donnée, Concevoir, gérer, administrer et exploiter les données de l’entreprise et mettre à disposition toutes les informations pour un bon pilotage de l’entreprise",
                     "UE 5, Conduire un projet, Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles",
                     "UE 6, Collaborer, Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique"
                 ],
-                textesae:["Daily Info, Keb'App, Aide à la décision","Création d'un algo de tri (S1), Daily Info, Aide à la décision","SAE Guide d'installation d'un poste de travail, SAE Installation et utilisation de Linux","Daily Info, SAE PowerBI, SAE Gestion BD","Rédaction de cahier des charges pour tout les projets","Poster, Campagne Fictive pour Auvergnat Cola"],
+                textesae:["Daily Info, Keb'App, Aide à la décision","Création d'un algo de tri (S1), Daily Info, Aide à la décision","SAE Guide d'installation d'un poste de travail, SAE Installation et utilisation de Linux","Daily Info, SAE PowerBI, SAE Gestion BD","Rédaction de cahier des charges pour tous les projets","Poster, Campagne Fictive pour Auvergnat Cola"],
                 cheminImages: "img/competences/",
                 galerytab:[0],
                 link:[0]
@@ -53,6 +53,7 @@ export default {
                     `MongoDB est une base de données NoSQL flexible et évolutive, utilisée pour stocker des données semi-structurées et non structurées. Elle offre une scalabilité horizontale, une haute disponibilité et une flexibilité de schéma, ce qui en fait un choix populaire pour les applications web modernes.`,                    
                     `Docker est une plateforme de virtualisation légère qui permet aux développeurs de créer, de déployer et d'exécuter des applications dans des conteneurs logiciels. Il offre une gestion efficace des environnements de développement et de production, ainsi qu'une portabilité des applications entre différents systèmes.`,             
                     `Git est un système de contrôle de version distribué largement utilisé pour le suivi des modifications apportées au code source lors du développement logiciel. Il permet aux équipes de collaborer efficacement, de gérer les branches de code et de suivre l'historique des modifications.`,
+                    `Moteur de template HTML pour Python`
                 ],
                 textesae:[],
                 cheminImages: "img/langages/",
@@ -68,41 +69,39 @@ export default {
                 // licon : [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"],
                 texte: [
                     `SAE réalisé en java lors du deuxième semestre d'IUT. On devait réaliser un logiciel pour aider à la décision d'un chemin à travers un graphe complexe. Le projet à été réalisé from scratch sans librairies de gestion de graphe. Nous avons implémenté l'algorithme de parcurs DijKstra`,
-                    `Daily Info est un site web PHP qui permet aux joueurs de recevoirent chaque jour un nouveau défi en lien avec l'IUT et l'informatique. Il existe plein de type de mission ! SAE su S3 d'IUT`,
+                    `Daily Info est un site web PHP qui permet aux joueurs de recevoirent chaque jour un nouveau défi en lien avec l'IUT et l'informatique. Il existe de nombreuses de type de mission ! SAE su S3 d'IUT`,
                     `Magnifique site web sur lequel vous vous trouvez actuellement ! Crée en Vue.js il retrace l'entièreté de mon parcours professionnel et associatif`,
-                    `Tourisme App ! Application mobile utilisant les données de data.grandlyon pour vous conseillez des sorties en ville dans Lyon`,
-                    `Kamouflage Web, site perso en Vue.JS pour la création d'une boutique en ligne et d'autres surprises. En cours de DEV`,
+                    `Tourisme App ! Application mobile utilisant les données de data.grandlyon pour vous conseiller des sorties en ville dans Lyon`,
+                    `Kamouflage Web, site perso en React pour la création d'une boutique en ligne et d'autres surprises. En cours de DEV`,
                     `Clique, clique, clique, clique ! Toujours plus ! Gagne le plus de twolve dans ce jeu de type clicker. Projet de web de moitié de S2 d'IUT`,
                     `Une petite faim ? Keb'app est là pour toi ! SAE de S1 d'IUT en HTML/CSS`,
-                    `Labyrinthe, projet de fin de lycée en cours de NSI. Battez vos amis dans ce jeu python pour parcouris le plus de labyrinthe dans un temps limité. Bonne chance !`,
+                    `Labyrinthe, projet de fin de lycée en cours de NSI. Battez vos amis dans ce jeu python pour parcourir le plus de labyrinthe dans un temps limité. Bonne chance !`,
                     `Connaissez vous le PIET ? Un langage de programmation basé sur une grille de couleur ! Ce poster scientifique résume tout !`,
                 ],
                 cheminImages: "./img/projet/",
                 galerytab:[1,1,0,1,0,0,1,0,1],
-                link:["https://github.com/MarvinVaucanson/sae_graphe/tree/main/sae-125-s2-logiciel-d-aide-a-la-decisions","https://dailyinfos.fun","https://baptiste.rousselot.name/Portfolio","https://github.com/MarvinVaucanson/DevMobile",0,"https://github.com/MarvinVaucanson/DouzieClicker",0,0,"https://github.com/MarvinVaucanson/Labyrinthe",0]
+                link:["https://github.com/MarvinVaucanson/sae_graphe/tree/main/sae-125-s2-logiciel-d-aide-a-la-decisions","https://dailyinfos.fun","https://baptiste.rousselot.name/Portfolio","https://github.com/MarvinVaucanson/DevMobile",0,"https://github.com/MarvinVaucanson/DouzieClicker",0,"https://github.com/MarvinVaucanson/Labyrinthe",0]
             },
             3: {
                 type: "",
                 path: "/experiences",
-                numUE : [1, 2, 3, 4, 5, 6, 7,8],
-                nomUE : ["INRAE", "Pepites d'Héloïse", "Maison Ivey", "Endorah", "Association La Galoche", "BDE Info", "Art et Science", "Youth For Climate", "Conseil de Vie Lycéenne", "Tutorat"],
+                numUE : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                nomUE : ["INRAE // 2024", "Pepites d'Héloïse // 2022", "Maison Ivey // 2023", "Endorah // 2019 à aujourd'hui", "Association La Galoche (café associatif) // 2023 à aujourd'hui", "BDE Info // 2023 - 2024", "Arts et Sciences // 2020 - 2022", "Youth For Climate // 2020 - 2022", "Conseil de Vie Lycéenne // 2022", "Tutorat // 2023 - 2024"],
                 licon : ["INRAE","pepiteshelo","maisonIvey","endorah","galoche","bde","art","yfc","cvl","tutorat"], 
                 // licon : [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"],
                 texte: [
-                    `Stage de validation de la 2eme année de BUT. J'ai travaillé avec les équipes d'INRAE Pollutions Agricoles Diffuses (PollDiff), sur GeoMelba un logiciel de modélisation de bassin versant. Plus d'info sur leurs sites web. Attente du rendu du rapport pour poster les images.`,
-                    `Des meumbles de seconde main ! Pendant 1 an j'ai géré l'instagram et le facebook`,
-                    `Job d'été. Gestion de l'instagram et de la boutique en ligne de cette micro entreprise de brocante.`,                    
-                    `Endorah est une équipe de créateurs passionnés par le jeu Minecraft dont je fais partis depuis 4 ans déjà. Nous regroupons, constructeurs, décorateurs, développeurs Java et web, graphistes, trailer makers et bien d’autres talents pour mener à bien nos projets !
-De la conception à la réalisation, nous créons nos projets de A à Z en accordant une attention particulière à chaque demande. La qualité finale et le succès de nos œuvres sont des valeurs essentielles pour nous.
-Ensemble, nous pouvons donner vie à votre projet !
-
-Plus d'image sur notres sites web !`,
-                    `Le collectif La Galoche est né de l’envie d’ouvrir un café associatif, lieu convivial et chaleureux sur Sathonay–Camp. Il a été créé par des habitant.es de Sathonay-Camp désirant un lieu de rencontre animé, ouvert à toutes et tous pour faire émerger des initiatives locales : concerts, conférences, théâtre, débats et échanges de savoirs. Le projet a grandi pour devenir aujourd’hui un lieu-ressource convivial, décontracté et citoyen réunissant à la fois un espace de travail partagé, une épicerie, un café associatif avec une programmation culturelle et festive. Formé au bar que je tiens régulièrement j'organise aussi des soirées loups garous et jeux de société.`,                    
-                    `Mandat de 2023 à 2024. Responsable du pôle culture j'ai dirigé la pblication de la radio culture, un mensuel sur instagram de culture. Ainsi qu'organisé de nombreux évènements.`,                  
-                    `L'art et la science ! Deux choses passionnantes. Dépassez les limites de la réalité en observant l'invisible ! Cela ne suffit pas ? Avez vous déjà rêvez de voir le son d'une manière inédite ? Non ? C'est pas grave parce qu'on l'a fait ! Exposition à l'ENS pour la fête de la science.`,                    
+                    `Stage de validation de la 2eme année de BUT. J'ai travaillé avec les équipes d'INRAE Pollutions Agricoles Diffuses (PollDiff), sur GeoMelba un logiciel de modélisation de bassin versant. (Plus d'infos sur leurs sites web. En attente du rendu du rapport de stage pour poster les images).`,
+                    `Des meubles de seconde main ! Pendant 1 an, j'ai géré les comptes instagram et facebook de cette micro entreprise`,
+                    `Job d'été. Gestion du compte Instagram et de la boutique en ligne de cette micro entreprise de brocante.`,                    
+                    `Endorah est une équipe de créateurs passionnés par le jeu Minecraft dont je fais partie depuis 4 ans déjà. Nous regroupons, constructeurs, décorateurs, développeurs Java et web, graphistes, trailer makers et bien d’autres talents pour mener à bien nos projets !
+                    De la conception à la réalisation, nous créons nos projets de A à Z en accordant une attention particulière à chaque demande. La qualité finale et le succès de nos œuvres sont des valeurs essentielles pour nous.
+                    Ensemble, nous pouvons donner vie à votre projet ! Plus d'image sur notre site web !`,
+                    `Le collectif La Galoche est né de l’envie d’ouvrir un café associatif, lieu convivial et chaleureux sur Sathonay–Camp. Il a été créé par des habitant.es de Sathonay-Camp désirant un lieu de rencontre animé, ouvert à toutes et tous pour faire émerger des initiatives locales : concerts, conférences, théâtre, débats et échanges de savoirs. Le projet a grandi pour devenir aujourd’hui un lieu-ressource convivial, décontracté et citoyen réunissant à la fois un espace de travail partagé, une épicerie, un café associatif avec une programmation culturelle et festive. Après avoir suivi une formation, il m'arrive de tenir le bar, j'organise aussi des soirées jeux de société.`,
+                    `Mandat de 2023 à 2024 au Bureau des élèves du départemnt informatique de l'IUT Lyon 1. Responsable du pôle culture j'ai dirigé la pblication de la radio culture, un mensuel sur instagram de culture. J'ai aussi organisé de nombreux évènements.`,            
+                    `L'art et la science ! Deux choses passionnantes. Dépassez les limites de la réalité en observant l'invisible ! Cela ne suffit pas ? Avez vous déjà rêvez de voir le son d'une manière inédite ? Non ? C'est pas grave parce qu'on l'a fait ! Exposition à l'ENS pour la Fête de la Science. (2020-2022)`,                    
                     `Lycée engagé pour le climat et la justice sociale ! Nous sommes plus chauds que le climat !`,
-                    `Elu pour être le représentant des lycéens de la cité scolaire de saint exupéry.`,
-                    `Transmettre mes connaissances, voir la même étincelle que moi dans les yeux des autres !`
+                    `Elu pour être le représentant des lycéens de la cité scolaire Saint Exupéry. (Lyon 4)`,
+                    `Transmettre mes connaissances, aider et accompagner des étudiants de premières années d'IUT.`
                 ],
                 textesae:[],
                 cheminImages: "./img/experiences/",
@@ -118,17 +117,16 @@ Plus d'image sur notres sites web !`,
                 licon : ["vidéo", "photo", "escalade", "+"],
                 // licon : [ "./img/projet/graphe.png","./img/projet/daily.png" ,"./img/projet/portfolio.png", "./img/projet/tourisme.png","./img/projet/kamouflage.png", "","./img/projet/kebab.png","./img/projet/labyrinthe.png"],
                 texte: [
-                    `J'écris, réalise, tourne, monte, projète mes propres court métrage ! Pour le Nicon Festival ou pour le plaisir avec mes amis. Toujours une caméra à proximité pour capter tout ce que je vois et imagines.`,
-                    `La photo, l'art de saisir un instant à jamais. Toujours pour essayer de transmettre des émotions d'un instant.`,
-                    `Grimpeur sur roche depuis toujours, les murs de blocs et de voies indoor sont devenues mon sport favoris. Toujours à la recherche d'amis avec qui peut être, enfin réussir à atteindre le sommet`,                    
-                    `Science, Guitare, Bande Dessiné, Musique, Urbex, Jeux Vidéos... Je ne manque pas de passion ni de passe temps.`,                    
+                    `J'écris, réalise, tourne, monte et projette mes propres courts-métrages ! Pour le Nikon Festival ou pour le plaisir avec mes amis. Toujours une caméra à proximité pour capter tout ce que je vois et imagine.`,
+                    `La photo, l'art de saisir un instant.`,
+                    `J'ai d'abord découvert la grimpe sur roche, avant de m'initier, depuis un an, aux murs de blocs et voies indoor. Toujours à la recherche d'amis avec qui peut-être, enfin réussir à atteindre le sommet`,                    
+                    `Science, Guitare, Bande Dessinée, Musique, Urbex, Jeux Vidéos... Je ne manque pas de passion ni de passe-temps.`,
                 ],
                 textesae:[],
-                cheminImages: "./img/projet/",
+                cheminImages: "./img/passion/",
                 galerytab:[0],
                 link:["https://www.youtube.com/channel/UC-O2kjB-UuN_QOCCvl6PfjQ",0,0,0]
             },
-
         };
 
         return { selected, ...data[props.cont] };
@@ -169,3 +167,6 @@ Plus d'image sur notres sites web !`,
     </div>
     `
 }
+
+
+// parle de comment j'ai fait le portfolio. Latek. Parler de l'anglais. parler plus de collaborer, manque de global (parler des reunions de chaque semaine) un institus. Manque sur QGis. Manque de clarté sur ma mission.GeoMelba à ete cree par inrae.
